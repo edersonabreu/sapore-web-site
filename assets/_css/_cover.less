@@ -1,0 +1,69 @@
+
+
+    .main{
+        .cover{
+            height: 454px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 169px 0 0 0;
+            .cover-content{
+                .content-breadcrumb{
+                    margin: 0 0 65px 0;
+                    nav{
+                        text-align: center;
+                        .breadcrumb{
+                            background-color: transparent;
+                            display: inline-flex;
+                            .breadcrumb-item{
+                                &::before{
+                                    content: '>';
+                                    color: #fff;
+                                }
+                                &:first-child{
+                                    &::before{
+                                        content: '';
+                                    }
+                                }
+                                a{
+                                    text-decoration: none;
+                                    font-family: aileron, sans-serif;
+                                    font-size: 14px;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    position: relative;
+                                }
+                                &.active{
+                                    a{
+                                        &::after{
+                                            content: '';
+                                            position: absolute;
+                                            bottom: -10px;
+                                            left: 0;
+                                            right: 0;
+                                            height: 6px;
+                                            width: 58px;
+                                            margin-left: 0;
+                                            margin-right: 0;
+                                            margin: 0 auto;
+                                            background-color: #BE1E2D;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .content-page-name{
+                    text-align: center;
+                    h2{
+                        font-weight: 900;
+                        font-family: aileron, sans-serif;
+                        font-size: 96px;
+                        color: #fff;
+                        margin: 0;
+                        letter-spacing: -7px;
+                    }
+                }
+            }
+        }
+    }

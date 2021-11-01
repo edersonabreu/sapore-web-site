@@ -1,0 +1,81 @@
+/*
+#############################
+	Grids
+#############################
+*/	
+	/*
+	=========================
+		Reset all 
+	=========================
+	*/
+		*{
+			box-sizing: border-box;
+		}	
+
+
+	/*
+	///////////////////////////////
+		Container
+	///////////////////////////////
+	*/
+		//Default
+		.container, .container-fluid{
+			&:after, &:before{
+				display: table;
+				content: " ";
+			}
+			&:after{
+				clear: both;
+			}
+		}
+		//Size Fixed
+		.container{
+			width: 100%;
+			max-width: 1306px;
+			padding: 0 15px;
+		}
+
+		//Fluid
+		.container-fluid{
+			width: 100%;
+		}
+	/*
+	///////////////////////////////
+		//Container
+	///////////////////////////////
+	*/
+
+	/*
+	=========================
+		Row
+	=========================
+	*/
+		.row{
+			&:after, &:before{
+				display: table;
+				content: " ";
+			}
+			&::after {
+				clear: both;				
+			}
+		}
+
+
+	/*
+	=========================
+		Set Cols settings
+	=========================
+	*/
+		[class^=col-]{
+			float: left;
+		}
+	/*
+	=========================
+		//Set Cols settings
+	=========================
+	*/
+/*
+////////////////////////////
+	//Grids
+////////////////////////////
+*/
